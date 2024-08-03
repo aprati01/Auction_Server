@@ -3,7 +3,9 @@ import { config } from 'dotenv';
 import paymentRoute from './Routes/paymentRouter.js';
 import Razorpay from "razorpay";
 import cors from "cors";
+ import {connectDB} from './Database/database.js'
 
+ connectDB();
 // Load environment variables from config.env
 config();
 
